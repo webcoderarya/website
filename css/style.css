@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(17, 17, 17); */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* ========================= Navbar ================================= */
+.menu-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 45, 87);
+    z-index: 5;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+.menu-btn #menu-btn-icon{
+    padding: 5px 10px 0 10px;
+    color: white;
+    font-size: 40px;
+}
+.main nav{
+    background-color: rgb(25, 24, 24);
+    display: inline-block;
+    position: fixed;
+    height: 100vh;
+    width: 230px;
+    z-index: 2;
+}
+.main nav .logo{
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 30px;
+    border:4px solid rgb(255, 45, 87);
+}
+.main nav .logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 5px;
+}
+.main h3{
+    color: rgb(255, 45, 87);
+    font-size: 30px;
+    padding: 5px;
+}
+.main .nav-links{
+    margin-top:30px ;
+}
+.main nav .nav-links a{
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    margin: auto;
+    color: white;
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 25px 0;
+    transition: 0.5s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main nav .nav-links a .side-icon{
+    color: rgb(255, 45, 87);
+    padding-right: 5px;    
+}
+.main nav .nav-links a:hover{
+    color: rgb(255, 45, 87);
+}
+.main nav a .link-icon{
+    font-size: 25px;
+    padding: 0 10px;
+}
+ .main nav .share{
+     background-color: rgb(255, 45, 87);
+     width: 80%;
+     height: auto;
+     padding: 7px;
+     text-align: center;
+     margin: auto;
+     position: absolute;
+     bottom: 3vh;
+     left: 0;
+     border-radius: 0 50px 50px 0;
+ }  
+ .main nav .share a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     color: white;
+     font-size: 20px;
+     font-weight: 300;
+ }
+
+ .main .share-popup{
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     bottom: 2vh;
+     left: 17vw;
+     width: 30px;
+     background-color: rgb(255, 45, 87);
+     box-sizing: content-box;
+ }
+ .main .share-popup a{
+     display: block;
+    font-size: 20px;
+    color: white;
+ }
+ .main .share-popup a:hover{
+     width: 200px;
+     font-size: 25px;
+   
+ }
+ .main .share-popup a span{
+     display: none;
+    border: 5px solid red;
+     background-color: rgb(255, 45, 87);
+     /* padding: 10px; */
+ }
+ .main .share-popup a .share-icons{
+    border: 5px solid blue;
+     font-size: 25px;
+     /* padding: 10px; */
+ }
+ .main .follow{
+    position: absolute;
+    display: flex;
+    top: 5px;
+    left: 260px;
+    width: 300px;
+    height: auto;
+}
+.main .follow span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 5px;
+}
+.main .follow a{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding-left: 10px;
+}
+/* ========================= website-content ================================= */
+
+.main header{
+    overflow: hidden;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)),url(../res/bg.jpg) 
+    no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    font-family: "ubuntu",sans-serif;
+    align-items: center;
+    justify-content:space-between;
+}
+.main header .intro{
+    width: 30%;
+    height: 45vh;
+    text-align: left;
+    padding: 40px;
+    margin-left: 17vw;
+    text-transform: capitalize;
+}
+.main header .intro h1{
+    color: white;
+    font-size: 60px;
+}
+.main header .intro h4{
+    color: white;
+    font-size: 20px;
+}
+.main header .intro p{
+    color: white;
+    font-size: 17px;
+}
+.main header .intro button{
+    background-color: rgb(255, 45, 87);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main header .intro button .btn-icon{
+    font-size: 30px;
+    padding: 0 5px 0 5px;
+    
+}
+.main header .intro button:hover{
+    background-color: #222;
+}

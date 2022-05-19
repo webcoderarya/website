@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width:850px) {
+    .main nav{
+        width: 170px;
+    }
+    .main nav .logo{
+        width: 77px;
+        height: 77px;
+    }
+    .main nav .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .main h3{
+        font-size: 22px;
+    }
+    .main .nav-links{
+        margin-top:25px ;
+    }
+    .main nav .nav-links a{
+        font-size: 15px;
+        padding: 23px 0;
+    }
+    .main nav a .link-icon{
+        font-size: 20px;
+        padding: 0 13px 0 0;
+    }
+     .main nav .share a{
+         font-size: 15px;
+     }
+}
+
+@media(max-width:500px) {
+    .menu-btn{
+        display: block;
+    }
+    
+    .main nav{
+        width: 200px;
+        left: -210px;
+    }
+    .main nav.active{
+        left: 0;
+    }
+    .main nav .logo{
+        width: 77px;
+        height: 77px;
+    }
+    .main nav .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .main h3{
+        font-size: 22px;
+    }
+    .main .nav-links{
+        margin-top:25px ;
+    }
+    .main nav .nav-links a{
+        font-size: 15px;
+        padding: 23px 0;
+    }
+    .main nav a .link-icon{
+        font-size: 20px;
+        padding: 0 13px 0 0;
+    }
+     .main nav .share a{
+         font-size: 15px;
+     }
+}
